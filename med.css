@@ -1,0 +1,1247 @@
+@font-face {
+    font-family: Lighthaus; /* Имя шрифта */
+    src: url("font/Lighthaus/Lighthaus.ttf"); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: Montserrat; /* Имя шрифта */
+    src: url("font/Montserrat/Montserrat-Regular.ttf"); /* Путь к файлу со шрифтом */
+}
+
+body{
+	padding: 0px;
+	margin: 0px; 
+}
+
+@media (min-width:701px) and (max-width: 1366px){
+	header{
+		background-image: url("images1366/fon1366.png");
+		width: 100%;
+		height: 736px;
+	} 
+
+
+	.otstup{
+		padding-left: 210px;
+		padding-top: 20px; 
+		position: relative;
+		z-index: 2;
+	}
+
+	.logo{
+		background: url("images1366/logo_red.png"); 
+		width: 127px;
+		height: 50px;
+	}
+
+	.shapkaText{
+		font: 40px "Lighthaus";
+		width: 469px;
+		padding-top: 90px;
+		line-height: 150%;
+		color: #2D2D2D;
+	}
+
+	.shapkaPodText{
+		font: 18px "Montserrat";
+		padding-top: 7px;
+		line-height: 28px;
+
+	}
+
+	.shapkaHelp{
+		margin-top: 30px;
+	}
+
+	.help{
+		font: 18px "Montserrat";
+		width: 146px;
+		height: 54px;
+		color: white;
+		background-color: #D81523;
+		border-color: #D81523;
+		border-radius: 30px;
+	}
+
+	.flex{
+		display: flex;
+	}
+
+	.twigL{
+		background: url("images1366/twig.png");
+		width: 382px;
+		height: 170px;
+	}
+
+	.bird{ 
+		background: url("images1366/bird.png");
+		width: 380px;
+		height: 130px;
+		margin-left: 111px;
+		margin-top: 113px;
+	}
+
+	.mainText{
+		font: 18px "Montserrat";
+		line-height: 150%;
+		width: 763px;
+		padding-top: 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.mainTextSilka a{
+		color: #D7B377;
+	}
+
+	.mainHelp{
+		padding-left: 610px;
+		margin-top: 30px;
+	}
+
+	.twigR{
+		background: url("images1366/twig.png");
+		width: 382px;
+		height: 170px;
+		transform: scale(-1,1);
+		float: right;
+		margin-top: 38px;
+	}
+
+	.mainFon{
+		background: url("images1366/fonmain.jpg");
+		background-size: contain;
+		background-position: 0px 304px;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 1300px;
+		margin: 0px;
+	}
+
+	.Vector_1{
+		position: absolute;
+		background: url("vector/Vector136_1.svg");
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		background-repeat: no-repeat;
+		z-index: 1;
+	}
+
+	.Vector_2{
+		position: absolute;
+		background: url("vector/Vector136_2.svg");
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		background-repeat: no-repeat;
+		z-index: 1;
+	}
+
+	.Vector_3{
+		position: absolute;
+		background: url("vector/Vector136_3.png");
+		top: 1300px;
+		left: 0px;
+		height: 943px;
+		width: 137px;
+		z-index: 1;
+	}
+
+	.Vector_4{
+		position: absolute;
+		background: url("vector/Vector136_4.png");
+		top: 2000px;
+		left: 1046px;
+		height: 1000px;
+		width: 300px;
+		background-repeat: no-repeat;
+		z-index: 1;
+	}
+
+		.Vector_5{
+		position: absolute;
+		background: url("vector/Vector136_5.png");
+		top: 2610px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		background-repeat: no-repeat;
+		z-index: 1;
+	}
+
+	.donat{
+		border-radius: 20px;
+		width: 627px;
+		background-color: white;
+		padding-top: 140px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.donatOtstup{
+		padding-bottom: 35px;
+		margin-top: 30px;
+		padding-left: 50px;
+		font: 18px "Montserrat";
+		width: 577px;
+		border: 1px solid #E5E5E5;
+		border-radius: 20px;
+	}
+
+	.donatZag{
+		font: 40px "Lighthaus";
+		text-align: center;
+	}
+
+
+	.donatBut{
+		width: 300px;
+		height: 55px;
+		background-color: none;
+		margin-top: 40px;
+		display: flex;
+		border: 1px solid #A6A6A6;
+		border-radius: 50px;
+	}
+
+	.buttonPeriodEvery{
+		width: 180px;
+		border-radius: 50px;
+		color: #2D2D2D;
+		border: 1px;
+		background: white;
+		font: 18px "Montserrat";
+	}
+
+	.buttonPeriodEvery.active {
+		border-radius: 50px;
+		background: #D7B377;
+		border: 0px;
+		color: white;
+	}
+
+	.buttonPeriodOne{
+		width: 120px;
+		border-radius: 50px;
+		color: #2D2D2D;
+		border: 1px ;
+		background: white;
+		font: 18px "Montserrat";
+	}
+
+	.buttonPeriodOne.active {
+		border-radius: 50px;
+		background: #D7B377;
+		border: 0px;
+		color: white;
+	}
+
+	.button17  {
+		width: 115px;
+		border-radius: 50px;
+		color: #2D2D2D;
+		border: 1px solid #808080;
+		background: white;
+		font: 18px "Montserrat";
+	}
+
+	.button17.active {
+		border-radius: 50px;
+		background: #D7B377;
+		border: 0px;
+		color: white;
+	}
+
+	.donatText{
+		margin-top: 20px;
+		width: 528px;
+		text-align: left;
+		line-height: 30px;
+	}
+
+	.palka{
+		width: 527px;
+		height: 1px;
+		margin-top: 20px;
+		background-color:  #A6A6A6;
+	}
+
+	.donatNumber button{
+		width: 110px;
+		height: 55px;
+		margin-top: 20px;
+		margin-right: 19px;
+		text-align: none;
+	}
+
+	.donatEmail{
+		width: 530px;
+		display: flex;
+    	flex-direction: column;
+    	margin-top: 15px;
+	}
+	.donatEmail input{
+		font: 18px "Montserrat" ;
+		margin-bottom: 20px;
+		border-radius: 50px;
+		height: 51px;
+		border: 1px solid #808080;
+		padding-left: 31px;
+	}
+
+	.donatYslovia{
+		display: flex;
+		align-items: center;
+		height: 30px;
+	}
+
+	.buttonO{
+		appearance: none;
+		width: 29px;
+		height: 29px;
+		border-radius: 50%;
+		background-color: #D7B377;
+		border: 4px solid white;
+		outline: 1px solid #808080;
+		margin-right: 20px;
+	}
+
+	.buttonO:checked {
+		border: 4px solid white;
+		outline: 1px solid #808080;
+ 		background-color: black;
+	}
+
+	.buttunSoul{
+		width: 530px;
+		height: 54px;
+		border-radius: 40px;
+		background-color: #D81523;
+		margin-top: 29px;
+		text-align: center;
+		font:  18px "Montserrat";
+		color: white;
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+	}
+
+	.textSoul{
+		margin-top: 30px;
+		padding-right: 50px;
+		text-align: center;
+		color: #D7B377;
+	}
+
+	.textSoul a{
+		font: 16px "Montserrat";
+		color: #D7B377;
+	}
+
+	.pay{
+		width: 530px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 30px;
+	}
+
+	.payMir{
+		background: url("images1366/donat/Mir.png");
+		width: 69px;
+		height: 21px;
+	}
+
+	.payVisa{
+		background: url("images1366/donat/Visa.png");
+		width: 69px;
+		height: 31px;
+	}
+
+	.payMaestro{
+		background: url("images1366/donat/Maestro.png");
+		width: 49px;
+		height: 37px;
+	}
+
+	.payMastercard{
+		background: url("images1366/donat/Mastercard.png");
+		width: 49px;
+		height: 37px;
+	}
+
+	.payGPay{
+		background: url("images1366/donat/GPay.png");
+		width: 63px;
+		height: 25px;
+	}
+
+	.payAPay{
+		background: url("images1366/donat/APay.png");
+		width: 61px;
+		height: 25px;
+	}
+
+	.birdDown{
+		background: url(images1366/birdDown.png);
+		width: 336px;
+		height: 160px;
+		position: absolute;
+		left: 34px;
+	}
+
+	.podText{
+		padding-top: 158px;
+		font: 18px "Montserrat";
+		text-align: center;
+	}
+
+	.podText div{
+		margin-bottom: 20px;
+
+	}
+
+	.podText p{
+		margin-top: 0px;
+		margin-bottom: 10px;
+
+	}
+
+	.rabbit{
+		background: url("images1366/rebbit.png");
+		width: 436px;
+		height: 186px;
+		margin-top: 310px;
+		position: absolute;
+		right: 0px;
+	}
+
+	.link{
+		margin-top: 240px;
+		background: #2D2D2D;
+		width: 100%;
+		height: 451px;
+	}
+
+	.logoWhite{
+		background: url("images1366/logo_white.png");
+		width: 180px;
+		height: 70px;
+	}
+
+	.posFlex{
+		padding-top: 40px;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.sites{
+		display: flex;
+   		flex-direction: column;	
+	}
+
+	.sites a{
+		color: white;
+		font: 16px "Montserrat";
+		margin-bottom: 20px;
+	}
+
+	.address{
+		font: 16px "Montserrat";
+		color: white;
+		width: 290px;
+		line-height: 28px;
+		margin-top: 0px;
+	}
+
+	.address p{
+		margin: 0px;
+	}
+
+	.address div{
+		margin-bottom: 20px;
+	}
+
+	.address span{
+		display: block;
+		padding-bottom: 10px;
+	}
+
+	.SiteOrigin{
+		font: 14px "Montserrat";
+		color: white;
+		text-align: center;
+	}
+}
+
+@media (min-width:1367px) {
+	header{
+		background-image: url("images1920/fon.png");
+		width: 100%;
+		height: 1000px;
+		background-size: contain;
+		background-repeat: no-repeat;
+	} 
+
+	.vector3{
+		position: absolute;
+		background: url("vector/Vector192_3.png");
+		top: 1300px;
+		left: 0px;
+		height: 943px;
+		width: 137px;
+	}
+
+	.otstup{
+		padding-left: 300px;
+		padding-top: 30px; 
+	}
+
+	.logo{
+		background: url("images1920/logo_red.png"); 
+		width: 180px;
+		height: 70px;
+	}
+
+	.shapkaText{
+		font: 48px "Lighthaus";
+		width: 570px;
+		padding-top: 170px;
+		line-height: 150%;
+		color: #2D2D2D;
+	}
+
+	.shapkaPodText{
+		font: 22px "Montserrat";
+		padding-top: 15px;
+	}
+
+	.shapkaHelp{
+		margin-top: 35px;
+	}
+
+	.help{
+		font: 22px "Montserrat";
+		width: 162px;
+		height: 67px;
+		color: white;
+		background-color: #D81523;
+		border-color: #D81523;
+		border-radius: 30px;
+	}
+
+	.flex{
+		display: flex;
+	}
+
+	.twigL{
+		background: url("images1920/twig.png");
+		width: 461px;
+		height: 205px;
+	}
+
+	.bird{ 
+		background: url("images1920/bird.png");
+		width: 447px;
+		height: 153px;
+		margin-left: 270px;
+		margin-top: 130px;
+	}
+
+	.mainText{
+		font: 22px "Montserrat";
+		line-height: 33px;
+		width: 1096px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.mainTextSilka a{
+		color: #D7B377;
+	}
+
+	.mainHelp{
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.twigR{
+		background: url("images1920/twig.png");
+		width: 461px;
+		height: 205px;
+		transform: scale(-1,1);
+		position: absolute;
+		right: 0px;
+		margin-top: 79px; 
+	}
+
+	.donat{
+		border-radius: 20px;
+		width: 700px;
+		background-color: white;
+		padding-top: 190px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.donatOtstup{
+		padding-bottom: 35px;
+		margin-top: 30px;
+		padding-left: 50px;
+		font: 20px "Montserrat";
+		width: 648px;
+		border: 1px solid #E5E5E5;
+		border-radius: 20px;
+	}
+
+	.donatZag{
+		font: 48px "Lighthaus";
+		text-align: center;
+	}
+
+	.donatBut{
+		width: 356px;
+		height: 65px;
+		background-color: none;
+		margin-top: 70px;
+		display: flex;
+		border: 1px solid #808080;
+		border-radius: 50px;
+	}
+
+	.buttonPeriodEvery{
+		width: 213px;
+		border-radius: 50px;
+		color: #2D2D2D;
+		border: 1px;
+		background: white;
+		font: 20px "Montserrat";
+	}
+
+	.buttonPeriodEvery.active {
+		border-radius: 50px;
+		background: #D7B377;
+		border: 0px;
+		color: white;
+	}
+
+	.buttonPeriodOne{
+		width: 147px;
+		border-radius: 50px;
+		color: #2D2D2D;
+		border: 1px ;
+		background: white;
+		font: 18px "Montserrat";
+	}
+
+	.buttonPeriodOne.active {
+		border-radius: 50px;
+		background: #D7B377;
+		border: 0px;
+		color: white;
+	}
+
+	.button17  {
+		width: 143px;
+		border-radius: 50px;
+		color: #2D2D2D;
+		border: 1px solid #808080;
+		background: white;
+		font: 20px "Montserrat";
+	}
+
+	.button17.active {
+		border-radius: 50px;
+		background: #D7B377;
+		border: 0px;
+		color: white;
+	}
+
+	.donatText{
+		margin-top: 15px;
+		width: 599px;
+		text-align: left;
+		line-height: 30px;
+	}
+
+	.palka{
+		width: 598px;
+		height: 1px;
+		margin-top: 20px;
+		background-color:  #A6A6A6;
+	}
+
+	.donatNumber button{
+		width: 123px;
+		height: 65px;
+		margin-top: 20px;
+		margin-right: 19px;
+		text-align: none;
+	}
+
+	.donatEmail{
+		width: 599px;
+		display: flex;
+    	flex-direction: column;
+    	margin-top: 15px;
+	}
+	.donatEmail input{
+		font: 20px "Montserrat";
+		margin-bottom: 20px;
+		border-radius: 50px;
+		height: 55px;
+		border: 1px solid #808080;
+		padding-left: 31px;
+	}
+
+	.donatYslovia{
+		display: flex;
+		align-items: center;
+		height: 30px;
+	}
+
+	.buttonO{
+		appearance: none;
+		width: 29px;
+		height: 29px;
+		border-radius: 50%;
+		background-color: #D7B377;
+		border: 4px solid white;
+		outline: 1px solid #808080;
+		margin-right: 20px;
+	}
+
+	.buttonO:checked {
+		border: 4px solid white;
+		outline: 1px solid #808080;
+ 		background-color: black;
+	}
+
+	.buttunSoul{
+		width: 599px;
+		height: 67px;
+		border-radius: 40px;
+		background-color: #D81523;
+		margin-top: 30px;
+		text-align: center;
+		font:  20px "Montserrat";
+		color: white;
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+	}
+
+	.textSoul{
+		margin-top: 30px;
+		padding-right: 50px;
+		text-align: center;
+		color: #D7B377;
+	}
+
+	.textSoul a{
+		font: 18px "Montserrat";
+		color: #D7B377;
+	}
+
+	.pay{
+		width: 600px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 30px;
+	}
+
+	.payMir{
+		background: url("images1920/donat/Mir.png");
+		width: 79px;
+		height: 23px;
+	}
+
+	.payVisa{
+		background: url("images1920/donat/Visa.png");
+		width: 79px;
+		height: 34px;
+	}
+
+	.payMaestro{
+		background: url("images1920/donat/Maestro.png");
+		width: 55px;
+		height: 42px;
+	}
+
+	.payMastercard{
+		background: url("images1920/donat/Mastercard.png");
+		width: 55px;
+		height: 42px;
+	}
+
+	.payGPay{
+		background: url("images1920/donat/GPay.png");
+		width: 70px;
+		height: 28px;
+	}
+
+	.payAPay{
+		background: url("images1920/donat/APay.png");
+		width: 69px;
+		height: 28px;
+	}
+
+	.mainFon{
+		background: url("images1920/fonmain.jpg");
+		background-position: 0px 134px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 100%;
+		height: 1635px;
+		margin: 0px;
+	}
+
+	.birdDown{
+		background: url(images1920/birdDown.png);
+		width: 474px;
+		height: 226px;
+		position: absolute;
+		left: 34px;
+	}
+	.podText{
+		padding-top: 190px;
+		font: 20px "Montserrat";
+		text-align: center;
+	}
+
+	.rabbit{
+		background: url("images1920/rebbit.png");
+		width: 600px;
+		height: 256px;
+		position: absolute;
+		right: 0px;
+		margin-top: 340px;
+	}
+
+	.link{
+		margin-top: 257px;
+		background: #2D2D2D;
+		width: 100%;
+
+	}
+
+	.logoWhite{
+		background: url("images1920/logo_white.png");
+		width: 180px;
+		height: 70px;
+	}
+
+	.posFlex{
+		padding-top: 40px;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.sites{
+		display: flex;
+   		flex-direction: column;	
+	}
+
+	.sites a{
+		color: white;
+		font: 18px "Montserrat";
+		margin-bottom: 20px;
+	}
+
+	.address{
+		font: 18px "Montserrat";
+		color: white;
+		width: 367px;
+		line-height: 28px;
+	}
+
+	.SiteOrigin{
+		font: 16px "Montserrat";
+		color: white;
+		text-align: center;
+	}
+}
+
+@media (max-width: 700px){
+	header{
+		background-image: url("images360/fon.png");
+		width: 100%;
+		height: 610px;
+		background-size: contain;
+		background-repeat: no-repeat;
+	} 
+
+	.otstup{
+		padding-left: 16px;
+		padding-top: 16px; 
+	}
+
+	.logo{
+		background: url("images360/logo_white.png"); 
+		width: 134px;
+		height: 52px;
+		background-repeat: no-repeat;
+	}
+
+	.shapkaText{
+		font: 29px "Lighthaus";
+		width: 328px;
+		padding-top: 276px;
+		color: #2D2D2D;
+	}
+
+	.shapkaPodText{
+		display: none;
+	}
+
+	.shapkaHelp{
+		margin-top: 20px;
+		width: 138px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.help{
+		font: 18px "Montserrat";
+		width: 138px;
+		height: 50px;
+		color: white;
+		background-color: #D81523;
+		border-color: #D81523;
+		border-radius: 30px;
+	}
+
+	.flex{
+
+	}
+
+	.twigL{
+display: none;
+	}
+
+	.bird{ 
+		background: url("images360/bird.png");
+		width: 325px;
+		height: 116px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.mainText{
+		font: 18px "Montserrat";
+		line-height: 27px;
+		width: 326px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.mainText p{
+		margin-top: 10px;
+	}
+
+	.mainTextSilka a{
+		color: #D7B377;
+	}
+
+	.mainHelp{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 30px;
+		width: 138px;
+	}
+
+	.twigR{
+display: none;
+	}
+
+	.donat{
+		border-radius: 20px;
+		width: 327px;
+		background-color: white;
+		padding-top: 80px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.donatOtstup{
+		padding-left: 20px;
+		font: 16px "Montserrat";
+		border: 1px solid #E5E5E5;
+		border-radius: 20px;
+	}
+
+	.donatZag{
+		font: 29px "Lighthaus";
+	}
+
+
+	.donatBut{
+		width: 286px;
+		height: 55px;
+		background-color: none;
+		margin-top: 30px;
+		display: flex;
+		border: 1px solid #808080;
+		border-radius: 50px;
+	}
+
+	.buttonPeriodEvery{
+		width: 163px;
+		border-radius: 50px;
+		color: #2D2D2D;
+		border: 1px;
+		background: white;
+		font: 18px "Montserrat";
+	}
+
+	.buttonPeriodEvery.active {
+		border-radius: 50px;
+		background: #D7B377;
+		border: 0px;
+		color: white;
+	}
+
+	.buttonPeriodOne{
+		width: 123px;
+		border-radius: 50px;
+		color: #2D2D2D;
+		border: 1px ;
+		background: white;
+		font: 18px "Montserrat";
+	}
+
+	.buttonPeriodOne.active {
+		border-radius: 50px;
+		background: #D7B377;
+		border: 0px;
+		color: white;
+	}
+
+	.button17  {
+		width: 122px;
+		border-radius: 50px;
+		color: #2D2D2D;
+		border: 1px solid #808080;
+		background: white;
+		font: 16px "Montserrat";
+	}
+
+	.button17.active {
+		border-radius: 50px;
+		background: #D7B377;
+		border: 0px;
+		color: white;
+	}
+
+	.donatText{
+		margin-top: 20px;
+		width: 287px;
+		text-align: left;
+	}
+
+	.palka{
+		width: 286px;
+		height: 1px;
+		margin-top: 20px;
+		background-color:  #A6A6A6;
+	}
+
+	.donatNumber button{
+		height: 55px;
+		margin-top: 20px;
+		margin-right: 19px;
+	}
+
+	.donatEmail{
+		width: 286px;
+		display: flex;
+    	flex-direction: column;
+    	margin-top: 15px;
+	}
+	.donatEmail input{
+		font: 16px "Montserrat";
+		margin-bottom: 20px;
+		border-radius: 50px;
+		padding-left: 30px;
+		height: 55px;
+		border: 1px solid #808080;
+	}
+
+	.donatYslovia{
+		display: flex;
+		align-items: center;
+		height: 30px;
+	}
+
+	.buttonO{
+		appearance: none;
+		width: 23px;
+		height: 23px;
+		border-radius: 50%;
+		background-color: #D7B377;
+		border: 4px solid white;
+		outline: 1px solid #808080;
+		margin-right: 20px;
+	}
+
+	.buttonO:checked {
+		border: 4px solid white;
+		outline: 1px solid #808080;
+ 		background-color: black;
+	}
+
+	.buttunSoul{
+		width: 287px;
+		height: 50px;
+		border-radius: 30px;
+		background-color: #D81523;
+		margin-top: 30px;
+		text-align: center;
+		font:  18px "Montserrat";
+		color: white;
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+	}
+
+	.textSoul{
+		margin-top: 30px;
+		text-align: center;
+		color: #D7B377;
+		padding-right: 20px;
+	}
+
+	.textSoul a{
+		font: 14px "Montserrat";
+		color: #D7B377;
+	}
+
+	.pay{
+		width: 287px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.payMir{
+		background: url("images360/donat/Mir.png");
+		width: 43px;
+		height: 14px;
+	}
+
+	.payVisa{
+		background: url("images360/donat/Visa.png");
+		width: 43px;
+		height: 20px;
+	}
+
+	.payMaestro{
+		background: url("images360/donat/Maestro.png");
+		width: 30px;
+		height: 23px;
+	}
+
+	.payMastercard{
+		background: url("images360/donat/Mastercard.png");
+		width: 30px;
+		height: 23px;
+	}
+
+	.payGPay{
+		background: url("images360/donat/GPay.png");
+		width: 39px;
+		height: 17px;
+	}
+
+	.payAPay{
+		background: url("images360/donat/APay.png");
+		width: 38px;
+		height: 17px;
+	}
+
+	.mainFon{
+		background: url("images360/fonmain.png");
+		background-size: contain;
+		background-position: 0px 100px;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 1062px;
+		margin: 0px;
+	}
+
+	.podText{
+		width: 320px;
+		padding-top: 60px;
+		font: 18px "Montserrat";
+		color: #2D2D2D;
+	}
+
+	.rabbit{
+		background: url("images360/rebbit.png");
+		width: 344px;
+		height: 158px;
+		margin-top: 310px;
+		position: absolute;
+		right: 0px;
+	}
+
+	.link{
+		margin-top: 240px;
+		background: #2D2D2D;
+		width: 100%;
+	}
+
+	.logoWhite{
+		background: url("images360/logo_white.png");
+		width: 135px;
+		height: 40px;
+	}
+
+	.posFlex{
+		padding-top: 30px;
+	}
+
+	.posFlex div{
+		margin-top: 20px;
+	}
+
+	.sites{
+		display: flex;
+   		flex-direction: column;	
+	}
+
+	.sites a{
+		color: white;
+		font: 16px "Montserrat";
+		margin-bottom: 20px;
+	}
+
+	.address{
+		font: 16px "Montserrat";
+		color: white;
+		width: 290px;
+		line-height: 28px;
+	}
+
+
+	.address p{
+		margin: 0px;
+	}
+
+	.address span{
+		display: block;
+		padding-bottom: 10px;
+	}
+
+	.SiteOrigin{
+		font: 14px "Montserrat";
+		color: white;
+		text-align: center;
+	}
+}
